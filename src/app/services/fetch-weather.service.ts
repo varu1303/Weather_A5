@@ -12,7 +12,7 @@ export class FetchWeatherService {
   constructor(private httpClient: HttpClient) { }
 
   getWeather() {
-    const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${APP_CONSTANTS.LAT}&lon=${APP_CONSTANTS.LON}&units=${APP_CONSTANTS.UNIT}&APPID=${APP_CONSTANTS.APP_ID}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${APP_CONSTANTS.LAT}&lon=${APP_CONSTANTS.LON}&units=${APP_CONSTANTS.UNIT}&APPID=${APP_CONSTANTS.APP_ID}`;
 
     return this.httpClient.get<weatherResponse>(url);
   }
