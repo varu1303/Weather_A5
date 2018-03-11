@@ -1,0 +1,14 @@
+<div class="detail">
+  <h2>
+    {{place?.city}}, {{place?.country}}
+  </h2>
+  <h2>
+    {{ dateInView | date:'fullDate' }}
+  </h2>
+  <div class="parts">
+    <div *ngFor="let part of day">
+      <p>{{ part.dt_txt | date:'shortTime' }} | {{part.weather[0].description}}</p>
+      <p>{{part.main.temp}}&deg;C</p>
+    </div>
+  </div>
+</div>
