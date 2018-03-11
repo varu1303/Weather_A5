@@ -9,9 +9,9 @@ import { reportBreakdown } from './../Models/report';
 })
 export class DayDetailComponent implements OnInit, OnChanges {
 
-  @Input() place: Object;
+  @Input() place: {place: string, city: string};
   @Input() day: Array<reportBreakdown>;
-  private dateInView: string;
+  public dateInView: string;
 
   constructor() { }
 

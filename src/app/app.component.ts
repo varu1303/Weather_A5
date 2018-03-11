@@ -10,11 +10,11 @@ import { reportBreakdown } from './Models/report';
 })
 export class AppComponent implements OnInit {
   title = 'Salisbury | Weather';
-  private place: object;
-  private daysArray: object;
-  private showThisDay: Array<reportBreakdown>;
-  private nextDays: Array<any>;
-  private activeDay = 0;
+  public place: object;
+  public daysArray: object;
+  public showThisDay: Array<reportBreakdown>;
+  public nextDays: Array<any>;
+  public activeDay = 0;
   constructor(private api: FetchWeatherService) {
   }
 

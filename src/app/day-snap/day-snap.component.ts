@@ -11,9 +11,9 @@ export class DaySnapComponent implements OnInit, OnChanges {
   @Input() day: Array<reportBreakdown>;
   @Input() index: number;
   @Output() showDetailsOfThis: EventEmitter<{day: Array<reportBreakdown>, index: number}> = new EventEmitter;
-  private temperature: number;
-  private avgTemp: number;
-  private date: string;
+  public temperature: number;
+  public avgTemp: number;
+  public date: string;
   
   constructor() { }
 
