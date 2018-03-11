@@ -9,7 +9,7 @@ import { reportBreakdown } from './../Models/report';
 })
 export class DayDetailComponent implements OnInit, OnChanges {
 
-  @Input() place: {place: string, city: string};
+  @Input() place: {country: string, city: string};
   @Input() day: Array<reportBreakdown>;
   public dateInView: string;
 
